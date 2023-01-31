@@ -18,7 +18,7 @@ function Inputsearch(props) {
         on cherche dans la liste des nos employees si on a des lignes qui correspondent à notre recherche
         par contre on fait cette premiere recherche seulement la premiere fois donc si le deuxieme index donc 1 est undefined
         ou meme si est vide (quand on tape espace pour mettre la deuxieme recherche)*/ 
-        (stateInput[1] === undefined || ' ') && props.data.users.map(item => {
+        (stateInput[1] === undefined || ' ') && props.data.map(item => {
             const obj = Object.values(item) 
             obj.map(item2 => {
                 if (stateInput.length !== 0 && item2.includes(stateInput[0])) {

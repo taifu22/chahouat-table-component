@@ -1,5 +1,5 @@
 import React from 'react';
-import { returnProductsArrays } from './services/ServicesListEmployees';
+import { returnProductsArrays } from './ServicesListEmployees';
 
 const Pagination = (props) => {
  
@@ -25,12 +25,12 @@ const Pagination = (props) => {
     return ( 
 		!!newData.length &&
 		<nav aria-label="Page navigation example" >
-			<ul className="pagination">
+			<ul className="pagination border border-white rounded">
 				<li className={`page-item ${ Previous.isDisabled ? 'disabled' : ''}`}>
 				    <a className="page-link" href="#" onClick={(e) => props.updatePage(e, props.pageIndex - 1)}>Previous</a>
 				</li>
 					{newData.map((_, index) => {
-					    return (<li key={index} className="page-item">
+					    return (<li key={index} className={props.pageIndex == index ? "page-item active" : "page-item"}>
 						            <a className="page-link" onClick={(e) => props.updatePage(e, index)}>{ index + 1 }</a>
 								</li>
 								)}

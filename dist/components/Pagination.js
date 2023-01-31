@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
-var _ServicesListEmployees = require("./services/ServicesListEmployees");
+var _ServicesListEmployees = require("./ServicesListEmployees");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 const Pagination = props => {
   /*here we retrieve the list of employees in order to be able to return an array sorted in relation
@@ -33,7 +33,7 @@ const Pagination = props => {
   return !!newData.length && /*#__PURE__*/_react.default.createElement("nav", {
     "aria-label": "Page navigation example"
   }, /*#__PURE__*/_react.default.createElement("ul", {
-    className: "pagination"
+    className: "pagination border border-white rounded"
   }, /*#__PURE__*/_react.default.createElement("li", {
     className: "page-item ".concat(Previous.isDisabled ? 'disabled' : '')
   }, /*#__PURE__*/_react.default.createElement("a", {
@@ -43,7 +43,7 @@ const Pagination = props => {
   }, "Previous")), newData.map((_, index) => {
     return /*#__PURE__*/_react.default.createElement("li", {
       key: index,
-      className: "page-item"
+      className: props.pageIndex == index ? "page-item active" : "page-item"
     }, /*#__PURE__*/_react.default.createElement("a", {
       className: "page-link",
       onClick: e => props.updatePage(e, index)
