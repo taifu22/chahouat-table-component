@@ -1,7 +1,6 @@
 # React Table Component 
 
-ce package a été créé pour le projet 14 Pass a jQuery library to React.
-Dans ce composant vous allez avoir un tableau personnalisable avec vos données, et 3 theme de couleurs differents (possibilité de rajouter des themes dans des versions superieures).
+this package was created for the Pass a jQuery library to React projct. In this component you will have a customizable array with your data, and 3 different color theme (possibility to add themes in higher versions).
 
 ## Author
 
