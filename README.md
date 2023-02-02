@@ -44,7 +44,7 @@ return (
 export default myComponent;
 ```
 
-explanation of all the properties of the component
+## explanation of all the properties of the component
 
 *  **arrayValuesTh** this will be an array that contains the contents of our table, for example 
 ```js
@@ -119,10 +119,10 @@ In future versions of the packgage, other themes will be available.
 theme1
 <img src="/assets/images/theme1.PNG"/>
 
-theme1
+theme2
 <img src="/assets/images/theme2.PNG"/>
 
-theme1
-<img src="/assets/images/theme2.PNG"/>
+theme3
+<img src="/assets/images/theme3.PNG"/>
 
 
