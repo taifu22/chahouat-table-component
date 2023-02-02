@@ -286,4 +286,109 @@
 }
 .div-employeeList-danger .p-go-home {
   color: red;
+}
+
+.nav-pagination-white .ul-pagination {
+  display: flex;
+  background-color: white;
+  border: solid 1px rgb(202, 198, 198);
+  border-radius: 5px;
+  padding: 0;
+}
+.nav-pagination-white .ul-pagination li {
+  margin: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+  color: #007bff;
+  cursor: pointer;
+}
+.nav-pagination-white .ul-pagination .active-li {
+  color: white;
+  background-color: #007bff;
+}
+.nav-pagination-white .ul-pagination .disabled-li {
+  pointer-events: none !important;
+  color: rgb(196, 196, 196);
+}
+.nav-pagination-white .ul-pagination {
+  background-color: white;
+  border: solid 1px rgb(202, 198, 198);
+}
+.nav-pagination-white .ul-pagination li {
+  color: #007bff;
+}
+.nav-pagination-white .ul-pagination .active-li {
+  color: white;
+  background-color: #007bff;
+}
+
+.nav-pagination-dark .ul-pagination {
+  display: flex;
+  background-color: white;
+  border: solid 1px rgb(202, 198, 198);
+  border-radius: 5px;
+  padding: 0;
+}
+.nav-pagination-dark .ul-pagination li {
+  margin: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+  color: #007bff;
+  cursor: pointer;
+}
+.nav-pagination-dark .ul-pagination .active-li {
+  color: white;
+  background-color: #007bff;
+}
+.nav-pagination-dark .ul-pagination .disabled-li {
+  pointer-events: none !important;
+  color: rgb(196, 196, 196);
+}
+.nav-pagination-dark .ul-pagination {
+  background-color: white;
+  border: solid 1px rgb(133, 127, 127);
+}
+.nav-pagination-dark .ul-pagination li {
+  color: black;
+}
+.nav-pagination-dark .ul-pagination .active-li {
+  color: white;
+  background-color: black;
+}
+
+.nav-pagination-danger .ul-pagination {
+  display: flex;
+  background-color: white;
+  border: solid 1px rgb(202, 198, 198);
+  border-radius: 5px;
+  padding: 0;
+}
+.nav-pagination-danger .ul-pagination li {
+  margin: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+  color: #007bff;
+  cursor: pointer;
+}
+.nav-pagination-danger .ul-pagination .active-li {
+  color: white;
+  background-color: #007bff;
+}
+.nav-pagination-danger .ul-pagination .disabled-li {
+  pointer-events: none !important;
+  color: rgb(196, 196, 196);
+}
+.nav-pagination-danger .ul-pagination {
+  background-color: white;
+  border: solid 1px #d88181;
+}
+.nav-pagination-danger .ul-pagination li {
+  color: red;
+}
+.nav-pagination-danger .ul-pagination .active-li {
+  color: white;
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */

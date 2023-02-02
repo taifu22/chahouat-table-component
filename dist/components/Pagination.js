@@ -29,30 +29,37 @@ const Pagination = props => {
     return {
       isDisabled: props.pageIndex === newData.length - 1
     };
-  }, [props.pageIndex]);
+  }, [props.pageIndex, newData]);
+
+  //function to choose theme css
+  function Themecss() {
+    if (props.cssThemes == 'theme2') {
+      return 'nav-pagination-dark';
+    } else if (props.cssThemes == 'theme3') {
+      return 'nav-pagination-danger';
+    } else {
+      return 'nav-pagination-white';
+    }
+  }
   return !!newData.length && /*#__PURE__*/_react.default.createElement("nav", {
+    className: Themecss(),
     "aria-label": "Page navigation example"
   }, /*#__PURE__*/_react.default.createElement("ul", {
-    className: "pagination border border-white rounded"
+    className: "ul-pagination"
   }, /*#__PURE__*/_react.default.createElement("li", {
-    className: "page-item ".concat(Previous.isDisabled ? 'disabled' : '')
+    className: "".concat(Previous.isDisabled ? 'disabled-li' : '')
   }, /*#__PURE__*/_react.default.createElement("a", {
-    className: "page-link",
-    href: "#",
     onClick: e => props.updatePage(e, props.pageIndex - 1)
   }, "Previous")), newData.map((_, index) => {
     return /*#__PURE__*/_react.default.createElement("li", {
       key: index,
-      className: props.pageIndex == index ? "page-item active" : "page-item"
+      className: props.pageIndex == index ? "active-li" : ""
     }, /*#__PURE__*/_react.default.createElement("a", {
-      className: "page-link",
       onClick: e => props.updatePage(e, index)
     }, index + 1));
   }), /*#__PURE__*/_react.default.createElement("li", {
-    className: "page-item ".concat(Next.isDisabled ? 'disabled' : '')
+    className: "".concat(Next.isDisabled ? 'disabled-li' : '')
   }, /*#__PURE__*/_react.default.createElement("a", {
-    className: "page-link",
-    href: "#",
     onClick: e => props.updatePage(e, props.pageIndex + 1)
   }, "Next"))));
 };

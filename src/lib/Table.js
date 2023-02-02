@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Inputsearch from './components/Inputsearch';
 import Pagination from './components/Pagination';
 import { returnProductsArrays } from './components/ServicesListEmployees';
@@ -96,6 +94,7 @@ function Table(props) {
                     filteredusers={props.dataEmployeeFiltered} 
                     updatePage={props.updatePage} 
                     stateValuePageSelect={stateValuePage}
+                    cssThemes={props.cssThemes}
                 />
             </div>
         </div>

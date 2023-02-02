@@ -7,8 +7,6 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 require("core-js/modules/web.dom-collections.iterator.js");
 var _react = _interopRequireWildcard(require("react"));
-require("bootstrap/dist/css/bootstrap.min.css");
-require("bootstrap/dist/js/bootstrap.bundle.min");
 var _Inputsearch = _interopRequireDefault(require("./components/Inputsearch"));
 var _Pagination = _interopRequireDefault(require("./components/Pagination"));
 var _ServicesListEmployees = require("./components/ServicesListEmployees");
@@ -103,7 +101,8 @@ function Table(props) {
     users: props.dataEmployees,
     filteredusers: props.dataEmployeeFiltered,
     updatePage: props.updatePage,
-    stateValuePageSelect: stateValuePage
+    stateValuePageSelect: stateValuePage,
+    cssThemes: props.cssThemes
   })));
 }
 var _default = Table;

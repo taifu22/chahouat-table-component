@@ -74,7 +74,7 @@ function Inputsearch(props) {
         <div>
             <label>Search : </label>
             <input onChange={e => Changeinput(e.target.value, e)} className='input-search' type={"search"}/>
-        </div>
+        </div> 
     );
 }
 
